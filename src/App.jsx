@@ -6,9 +6,9 @@ import Contact from "./Component/Contact";
 import Display from "./Component/Display";
 import Search from "./Component/Search";
 import Update from "./Component/Update";
-
-
-
+import EditData from "./Component/EditData";
+import Login from "./Component/Login";
+import Registration from "./Component/Registration";
 
 const App = () => {
   return ( 
@@ -23,8 +23,9 @@ const App = () => {
         <Route path="search" element={<Search/>}/>
         <Route path="update" element={<Update/>}/>
         <Route path="conatct" element={<Contact/>}/>
-        
-
+        <Route path="editdata/:id" element={<EditData/>}/>
+        <Route path="login" element={<Login/>}/>
+        <Route path="registration" element={<Registration/>}/>
 
         </Route>
       </Routes>

@@ -3,8 +3,6 @@ import axios from "axios" ;
 import StuDesign from "./StuDesign";
 import Table from 'react-bootstrap/Table';
 
-
-
 const Display = () => {
     const [mydata, setMydata]=useState([]);
 

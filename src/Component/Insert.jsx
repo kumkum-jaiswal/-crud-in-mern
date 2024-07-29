@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 
+import { ToastContainer, toast } from 'react-toastify';
+
 const Insert = () => {
 
   const [input,setinput]= useState({});
@@ -15,11 +17,12 @@ const Insert = () => {
         console.log(input)
     }
     const handle=(e)=>{
-        e.preventDefault();
+        e.preventDefault();    //bootstarp k form refesh n kre taki react k liye kaam kre
         let api="http://localhost:9000/students/stusave";
         axios.post(api,input).then((res)=>{
           console.log(res)
-          alert("data save")
+          // alert("data save")
+          toast.success("data successfully save")
         })
         // console.log({name:name ,city:city ,rollno:rollno,fees:fees})
     }
@@ -56,6 +59,7 @@ const Insert = () => {
         Submit
       </Button>
     </Form>
+    <ToastContainer />
         </>
      );
 }

@@ -17,8 +17,10 @@ const Layout = () => {
             <Nav.Link as={Link} to="insert">Insert</Nav.Link>
             <Nav.Link as={Link} to="display">Display</Nav.Link>
             <Nav.Link as={Link} to="search">Search</Nav.Link>
-            <Nav.Link as={Link} to="update">Display</Nav.Link>
+            <Nav.Link as={Link} to="update">Update</Nav.Link>
             <Nav.Link as={Link} to="conatct">Contact</Nav.Link>
+            <Nav.Link as={Link} to="login">Login</Nav.Link>
+            <Nav.Link as={Link} to="registration">Registration</Nav.Link>
             
           </Nav>
         </Container>
